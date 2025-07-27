@@ -7,25 +7,25 @@ const ServicesSection = () => {
     {
       id: '01',
       title: 'Engine Repair & Maintenance',
-      image: '/images/img_image.png',
+      image: '/images/enginerepair.jpg',
       icon: '/images/img_inspection_car.svg'
     },
     {
       id: '02',
       title: 'Oil & Filter Changes',
-      image: '/images/img_image.png',
+      image: '/images/oil.jpg',
       icon: '/images/img_oil_change_car.svg'
     },
     {
       id: '03',
       title: 'Brake Services',
-      image: '/images/img_image_454x286.png',
+      image: '/images/brakeservices.jpg',
       icon: '/images/img_brake_inspection.svg'
     },
     {
       id: '04',
       title: 'Tire Care',
-      image: '/images/img_image.png',
+      image: '/images/tyrecare.jpg',
       icon: '/images/img_tire_rotation.svg'
     }
   ];
@@ -94,7 +94,7 @@ const ServicesSection = () => {
         {/* Brands Section */}
         <div className="text-center mb-8">
           <p className="text-lg sm:text-xl md:text-2xl font-medium text-white mb-8 sm:mb-12">
-            Quality Car Repair You Can Count On !
+            Quality Bike Repair You Can Count On !
           </p>
           
           <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 lg:gap-16 opacity-70">

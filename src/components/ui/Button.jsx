@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { cn } from "@/lib/utils"; // Assuming utils file at lib/utils.js
 
 const Button = ({ 
   children, 
@@ -27,9 +28,6 @@ const Button = ({
     lg: 'px-8 py-4 text-base sm:px-10 sm:py-5 sm:text-lg md:text-lg lg:text-xl'
   };
 
-  const responsiveRadius = 'rounded-lg sm:rounded-lg md:rounded-lg';
-  const responsiveFocus = 'focus:ring-2 sm:focus:ring-2 md:focus:ring-4';
-
   const LoadingSpinner = () => (
     <svg 
       className="animate-spin h-4 w-4 sm:h-5 sm:w-5 mr-2 sm:mr-3" 
@@ -37,19 +35,8 @@ const Button = ({
       fill="none" 
       viewBox="0 0 24 24"
     >
-      <circle 
-        className="opacity-25" 
-        cx="12" 
-        cy="12" 
-        r="10" 
-        stroke="currentColor" 
-        strokeWidth="4"
-      />
-      <path 
-        className="opacity-75" 
-        fill="currentColor" 
-        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-      />
+      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
     </svg>
   );
 
@@ -58,39 +45,35 @@ const Button = ({
       type={type}
       onClick={disabled || loading ? undefined : onClick}
       disabled={disabled || loading}
-      className={`
-        ${responsiveRadius}
-        transition-all 
-        duration-200 
-        ease-in-out
-        focus:outline-none 
-        ${responsiveFocus}
-        focus:ring-opacity-50
-        ${variants[variant]} 
-        ${sizes[size]} 
-        ${fullWidth ? 'w-full' : ''}
-        ${disabled || loading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:scale-105 active:scale-95'} 
-        ${loading ? 'relative' : ''}
-        font-medium
-        inline-flex
-        items-center
-        justify-center
-        min-h-[44px] sm:min-h-[48px]
-        touch-manipulation
-        ${className}
-      `.trim().replace(/\s+/g, ' ')}
+      className={cn(
+        'transition-all duration-200 ease-in-out focus:outline-none font-medium',
+        'inline-flex items-center justify-center min-h-[44px] sm:min-h-[48px] touch-manipulation',
+        'rounded-lg focus:ring-2 focus:ring-opacity-50 md:focus:ring-4', // Simplified responsive classes
+        variants[variant],
+        sizes[size],
+        {
+          'w-full': fullWidth,
+          'opacity-50 cursor-not-allowed': disabled || loading,
+          'cursor-pointer hover:scale-105 active:scale-95': !disabled && !loading,
+        },
+        className // External classes overwrite defaults
+      )}
       aria-disabled={disabled || loading}
       aria-busy={loading}
       {...props}
     >
       {loading && <LoadingSpinner />}
-      <span className={`flex items-center gap-1 ${loading ? 'opacity-75' : ''}`}>
+      <span className={cn('flex items-center gap-1', { 'opacity-75': loading })}>
         {children}
         {rightImage && (
           <img 
             src={rightImage.src} 
             alt="" 
-            className={`w-[${rightImage.width}px] h-[${rightImage.height}px] ml-1`}
+            className="ml-1"
+            style={{ 
+              width: `${rightImage.width}px`, 
+              height: `${rightImage.height}px` 
+            }}
           />
         )}
       </span>

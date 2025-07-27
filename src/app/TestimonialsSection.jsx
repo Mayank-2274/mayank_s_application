@@ -5,22 +5,22 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Albert Flores',
-      image: '/images/img_image_116x116.png',
+      name: 'Ishwaran',
+      image: '/images/cust1.jpg',
       rating: '/images/img_vector_red_600.svg',
       text: 'For years, I\'ve trusted my car to FixinMoto, and they\'ve never let me down. The staff is not only friendly but also incredibly knowledgeable, taking the time to walk me through every repair. I wholeheartedly recommend them to anyone in need of dependable auto repair services.'
     },
     {
       id: 2,
-      name: 'Robert Fox',
-      image: '/images/img_image_116x116.png',
+      name: 'Ankit Srivastava',
+      image: '/images/cust2.jpg',
       rating: '/images/img_vector_red_600.svg',
       text: 'When I faced a sudden issue with my vehicle, FixinMoto managed to fit me in for an appointment on the same day. Their team quickly diagnosed the problem and had my car back on the road in no time. I truly appreciated their prompt and effective service.'
     },
     {
       id: 3,
-      name: 'Eleanor Pena',
-      image: '/images/img_image_116x116.png',
+      name: 'Ritik Agrawal',
+      image: '/images/cust3.jpg',
       rating: '/images/img_vector_red_600.svg',
       text: 'I encountered an urgent problem with my vehicle and was fortunate to secure a same-day appointment at FixinMotopair. The staff swiftly identified the issue and got my car running again in no time. Their quick and efficient service was greatly appreciated.'
     }
@@ -37,13 +37,10 @@ const TestimonialsSection = () => {
               <div className="lg:col-span-2">
                 <h2 className="text-[32px] sm:text-[48px] md:text-[64px] font-medium leading-tight">
                   <span className="text-white">What Drivers Are Saying About </span>
-                  <span className="text-accent">Fixinmoto</span>
+                  <span className="text-accent">Synergy</span>
                 </h2>
               </div>
               <div>
-                <p className="text-sm sm:text-base text-white-70 leading-relaxed">
-                  Read what our satisfied customers have to say about our products and services
-                </p>
               </div>
             </div>
           </div>
@@ -55,6 +52,9 @@ const TestimonialsSection = () => {
         <div className="bg-accent rounded-t-3xl pt-12 sm:pt-16 pb-12 sm:pb-16">
           <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
             {/* Testimonials Grid */}
+                <p className="text-sm sm:text-base text-white-80 leading-relaxed">
+                  Read what our satisfied customers have to say about our products and services
+                </p>
             <div className="flex gap-5 overflow-x-auto pb-6 mb-8">
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="flex-shrink-0 w-[320px] sm:w-[400px] md:w-[492px]">

@@ -37,7 +37,7 @@ const ProcessSection = () => {
               <p className="text-sm sm:text-base text-white-50">Service Process</p>
               <h2 className="text-[32px] sm:text-[48px] md:text-[64px] font-medium leading-tight">
                 <span className="text-white">What to Expect with </span>
-                <span className="text-accent">FixinMoto</span>
+                <span className="text-accent">Synergy</span>
               </h2>
             </div>
 
@@ -73,7 +73,7 @@ const ProcessSection = () => {
             </div>
             <div className="relative">
               <img 
-                src="/images/img_image_638x618.png" 
+                src="/images/bobber.jpg" 
                 alt="FixinMoto Process" 
                 className="w-full h-auto rounded-2xl"
               />

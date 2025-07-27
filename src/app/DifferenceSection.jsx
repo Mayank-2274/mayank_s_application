@@ -20,14 +20,14 @@ const DifferenceSection = () => {
             <div>
               <p className="text-sm sm:text-base text-white-50 mb-2">Why Choose Us</p>
               <h2 className="text-[32px] sm:text-[48px] md:text-[64px] font-medium leading-tight mb-6 sm:mb-8">
-                <span className="text-white">The FixinMoto </span>
-                <span className="text-accent">Difference</span>
+                <span className="text-white">The Synergy </span>
+                <span className="text-accent">Jawa Difference</span>
               </h2>
             </div>
 
             <div className="space-y-6">
               <p className="text-sm text-white-50 leading-relaxed">
-                Discover why FixinMoto is the trusted choice for hundreds of car owners.
+                Discover why Synergy is the trusted choice for hundreds of Bike owners.
               </p>
 
               <div className="space-y-4">
@@ -59,7 +59,7 @@ const DifferenceSection = () => {
               {/* Main Image */}
               <div className="relative">
                 <img 
-                  src="/images/img_image_638x618.png" 
+                  src="/images/yezdi.jpg" 
                   alt="FixinMoto Service" 
                   className="w-full h-auto rounded-2xl"
                 />
@@ -68,7 +68,7 @@ const DifferenceSection = () => {
               {/* Small Image Overlay */}
               <div className="absolute -bottom-8 -left-8 sm:-bottom-12 sm:-left-12">
                 <img 
-                  src="/images/img_image_638x618.png" 
+                  src="/images/jawabike.jpg" 
                   alt="FixinMoto Detail" 
                   className="w-32 sm:w-48 md:w-60 h-auto rounded-2xl shadow-lg"
                 />

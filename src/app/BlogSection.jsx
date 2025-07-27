@@ -8,7 +8,7 @@ const BlogSection = () => {
     {
       id: 1,
       title: 'Revving Up: The Future of Automotive Innovation',
-      image: '/images/img_image_300x378.png',
+      image: '/images/blog1.jpg',
       category: 'Category',
       readTime: '5 min read',
       date: 'December 29, 2024',
@@ -17,7 +17,7 @@ const BlogSection = () => {
     {
       id: 2,
       title: 'Driving Change: Trends Shaping the Automotive Industry',
-      image: '/images/img_image_300x378.png',
+      image: '/images/blog2.jpg',
       category: 'Category',
       readTime: '5 min read',
       date: 'December 12, 2024',
@@ -26,7 +26,7 @@ const BlogSection = () => {
     {
       id: 3,
       title: 'Under the Hood: Exploring the Latest in Automotive',
-      image: '/images/img_image_300x378.png',
+      image: '/images/blog3.jpg',
       category: 'Category',
       readTime: '5 min read',
       date: 'December 7, 2024',
