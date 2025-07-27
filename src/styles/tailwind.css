@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --bg-primary: #222222;
+    --bg-secondary: #292929;
+    --bg-accent: #db323e;
+    --bg-light: #edf2fd;
+    --bg-neutral: #f8f8f6;
+    --bg-white: #ffffff;
+
+    /* Text Colors */
+    --text-primary: #222222;
+    --text-primary-75: #2222227f;
+    --text-primary-80: #222222cc;
+    --text-secondary: #292929;
+    --text-muted: #57575782;
+    --text-accent: #db323e;
+    --text-white: #ffffff;
+    --text-white-50: #ffffff7f;
+    --text-white-70: #ffffffb2;
+    --text-white-80: #ffffffcc;
+  }
+}
+
+@layer utilities {
+  /* Background Colors */
+  .bg-primary {
+    background-color: var(--bg-primary);
+  }
+  .bg-secondary {
+    background-color: var(--bg-secondary);
+  }
+  .bg-accent {
+    background-color: var(--bg-accent);
+  }
+  .bg-light {
+    background-color: var(--bg-light);
+  }
+  .bg-neutral {
+    background-color: var(--bg-neutral);
+  }
+  .bg-white {
+    background-color: var(--bg-white);
+  }
+
+  /* Text Colors */
+  .text-primary {
+    color: var(--text-primary);
+  }
+  .text-primary-75 {
+    color: var(--text-primary-75);
+  }
+  .text-primary-80 {
+    color: var(--text-primary-80);
+  }
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+  .text-muted {
+    color: var(--text-muted);
+  }
+  .text-accent {
+    color: var(--text-accent);
+  }
+  .text-white {
+    color: var(--text-white);
+  }
+  .text-white-50 {
+    color: var(--text-white-50);
+  }
+  .text-white-70 {
+    color: var(--text-white-70);
+  }
+  .text-white-80 {
+    color: var(--text-white-80);
+  }
+}
