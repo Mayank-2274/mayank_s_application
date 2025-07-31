@@ -8,21 +8,21 @@ const TestimonialsSection = () => {
       name: 'Ishwaran',
       image: '/images/cust1.jpg',
       rating: '/images/img_vector_red_600.svg',
-      text: 'For years, I\'ve trusted my car to FixinMoto, and they\'ve never let me down. The staff is not only friendly but also incredibly knowledgeable, taking the time to walk me through every repair. I wholeheartedly recommend them to anyone in need of dependable auto repair services.'
+      text: 'For years, I\'ve trusted my car to Synergy, and they\'ve never let me down. The staff is not only friendly but also incredibly knowledgeable, taking the time to walk me through every repair. I wholeheartedly recommend them to anyone in need of dependable auto repair services.'
     },
     {
       id: 2,
       name: 'Ankit Srivastava',
       image: '/images/cust2.jpg',
       rating: '/images/img_vector_red_600.svg',
-      text: 'When I faced a sudden issue with my vehicle, FixinMoto managed to fit me in for an appointment on the same day. Their team quickly diagnosed the problem and had my car back on the road in no time. I truly appreciated their prompt and effective service.'
+      text: 'When I faced a sudden issue with my vehicle, Synergy managed to fit me in for an appointment on the same day. Their team quickly diagnosed the problem and had my car back on the road in no time. I truly appreciated their prompt and effective service.'
     },
     {
       id: 3,
       name: 'Ritik Agrawal',
       image: '/images/cust3.jpg',
       rating: '/images/img_vector_red_600.svg',
-      text: 'I encountered an urgent problem with my vehicle and was fortunate to secure a same-day appointment at FixinMotopair. The staff swiftly identified the issue and got my car running again in no time. Their quick and efficient service was greatly appreciated.'
+      text: 'I encountered an urgent problem with my vehicle and was fortunate to secure a same-day appointment at Synergy. The staff swiftly identified the issue and got my car running again in no time. Their quick and efficient service was greatly appreciated.'
     }
   ];
 

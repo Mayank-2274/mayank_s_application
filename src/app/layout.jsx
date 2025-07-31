@@ -6,11 +6,11 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Next.js with Tailwind CSS',
-  description: 'A boilerplate project with Next.js 15 and Tailwind CSS 3.4.17',
+  title: 'Synergy -Jawa ',
+  description: 'Synergy Automobile Parts by Jawa',
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' }
+      { url: '/images/img_jawa.png', type: 'image/png' }
     ],
   },
 };
